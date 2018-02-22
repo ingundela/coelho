@@ -37,7 +37,7 @@ h2{
 /*-- Start Navigation bar--*/
 
 .navbar-brand {
-  width: 150px;
+  width: 190px;
 }
 
 .navbar{
@@ -99,46 +99,50 @@ h2{
     height: 100vh;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.8);
     z-index: 2;
 }
 .hero-caption{
-    max-width: 50rem;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 80rem;
+    position: relative;
 }
 .hero-caption h1{
-    font-size: 3.3rem;
+    font-size: 2.5rem;
+    text-align: justify;
     position: relative;
-    margin: 10px 0;
+    margin-top: 20%;
     z-index: 3;
     color: #e6e6e6;
     font-weight: 700;
-    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-
-
 }
 
-.hero-caption .span-span{
-    font-size: 1.2rem;
-    position: relative;
-    text-transform: lowercase;
-    z-index: 3;
-    color: #d9d9d9;
-    font-family: 'Spectral SC', serif !important;
+.hero-caption span{
+  color: #4ca64c;
+  font-size: 5rem !important;
+}
+
+.hero-left p{
+  font-size: 1.5rem;
+  text-align: justify;
+  position: relative;
+  margin-top: 10px;
+  z-index: 3;
+  color: #e6e6e6;
+  font-weight: 300;
+}
+.hero-right img{
+  position: relative;
+   z-index: 3;
+   width: 700px;
+   margin-left: 80px;
 }
 
 .hero-caption .h1-green{
   color: #4ca64c;
 }
 
-.hero-caption .span-span-span{
-    font-size: 0.8rem;
-    position: relative;
-    z-index: 3;
-    color: #fff;
-}
+
 
 .hero-caption .btn-primary {
     display: inline-block;
@@ -148,7 +152,8 @@ h2{
     border-radius: 2em;
     z-index: 3;
     position: relative;
-    margin: 40px 20px 0 20px;
+    margin-top: 20px;
+    margin-right: 40px;
     color: #fff;
     border: 2px solid #4ca64c;
     white-space: nowrap;
@@ -320,7 +325,7 @@ h2{
 /*--Why us--*/
 
 .whyUs{
-  padding: 100px 0;
+  padding: 120px 0;
   background: #f0f0f5;
 }
 
@@ -451,33 +456,45 @@ h2{
 /*-- MEDIA QUIRES--*/
 
 @media screen and (max-width: 768px){
-    .navbar-light .navbar-nav .nav-link {
-      font-size: 0.9375rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 700;
-      margin-left: 20px;
-      border: 1px solid #fff;
-  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-left: 20px;
+    border: 1px solid #fff;
+}
+    
     .hero-caption{
-      max-width: 30rem;
+      margin-bottom: 40px;
+      text-align: center;
+      margin: 0 auto;
   }
   .hero-caption h1{
-      font-size: 1.4rem;
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 150px;
   }
 
-  .hero-caption .span-span{
+  .hero-caption p{
       font-size: 0.8rem;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
   }
 
-
-  .hero-caption .span-span-span{
-      font-size: 0.8rem;
+  .hero-right img{
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
 
   .hero-caption .btn-primary {
       width: 12em;
-      font-size: 0.9rem;
+      font-size: 0.7rem;
+      text-align: center;
+      margin: 0 auto;
   }
   
   .callout h2{
@@ -487,15 +504,17 @@ h2{
 
   .callout p{
     font-size: 0.8rem;
+    text-align: center;
   }
 
   .callout .btn.btn-secondary {
       width: 12em;
       font-size: 0.9rem;
       text-align: center;
-      margin: 10px 20px 0 79px;
+      margin: 10px 20px 0 87px;
   }
   
+  /*--welcome--*/
 
   .welcome {
     padding-top: 50px;
@@ -509,19 +528,39 @@ h2{
     padding-left: 12px;
   }
   
+  .whyUs{
+    padding: 50px 0;
+  }
   .whyUs .w-box{
     margin-bottom: 30px;
   }
 
-  .services {
-    padding-top: 60px;
+  .servisces {
+    padding: 60px 0 40px 0;
     text-align: center;
   }
 
-  .services-box{
-    margin-top: 10px;
+  .services .box-top {
+    margin-top: -24px;
+  }
+  
+  .services .box-top p{
+    margin-bottom: 40px;
   }
 
+    
+  .top-title h2 {
+    font-size: 1.5rem;
+  }
+  
+  .services .wrapper-p{
+    padding: 0 20px;
+    text-align: justify;
+  }
+
+  .services .service-icon{
+    font-size: 4rem;
+  }
   .footer{
     padding: 80px 0;
   }
@@ -534,44 +573,22 @@ h2{
     font-size: 2rem;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
